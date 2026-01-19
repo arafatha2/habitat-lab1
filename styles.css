@@ -1,105 +1,83 @@
-/* ---------- Global ---------- */
-body {
-  font-family: "Segoe UI", Arial, sans-serif;
+/* Basic Reset */
+* {
   margin: 0;
-  background-color: #f4f6f8;
-  color: #333;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+body {
+  font-family: Arial, sans-serif;
+  background: #f7f7f7;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  text-align: center;
+  background: #4CAF50;
+  color: white;
+  padding: 1.5rem 0;
+}
+
+header h1 {
+  font-size: 2.5rem;
+}
+
+header p {
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+}
+
+/* Main content */
 main {
   max-width: 900px;
-  margin: 40px auto;
-  padding: 0 20px;
+  margin: 2rem auto;
+  padding: 0 1rem;
 }
 
-/* ---------- Header ---------- */
-header {
-  background-color: #003a8f;
-  padding: 15px 30px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-#logo {
-  max-width: 140px;
-}
-
-/* ---------- Navigation ---------- */
-nav {
-  position: relative;
-}
-
-#menuIcon {
-  width: 35px;
-  cursor: pointer;
-}
-
-nav ul {
-  list-style: none;
-  position: absolute;
-  right: 0;
-  top: 45px;
+.card {
   background: white;
-  padding: 15px;
-  margin: 0;
-  border-radius: 6px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-  display: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  transition: transform 0.2s;
 }
 
-nav li {
-  margin: 10px 0;
+.card:hover {
+  transform: translateY(-5px);
 }
 
-nav a {
-  text-decoration: none;
-  color: #003a8f;
-  font-weight: 600;
-}
-
-/* ---------- Content ---------- */
-article {
-  background: white;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-}
-
-article h2 {
-  margin-top: 0;
-  color: #003a8f;
-}
-
-.fadeImage {
+.card img, .card audio {
   width: 100%;
-  max-width: 500px;
+  margin-top: 1rem;
   border-radius: 8px;
-  margin: 20px 0;
-  display: block;
+  display: none; /* initially hidden */
 }
 
-/* ---------- Buttons ---------- */
-button {
-  background-color: #f5a623;
-  color: #222;
+/* Buttons */
+.toggle-btn {
+  background: #4CAF50;
+  color: white;
   border: none;
-  padding: 12px 20px;
-  font-size: 15px;
+  padding: 0.5rem 1rem;
   border-radius: 6px;
   cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  margin-top: 0.5rem;
+  transition: background 0.3s;
 }
 
-button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+.toggle-btn:hover {
+  background: #45a049;
 }
 
-/* ---------- Video ---------- */
-video {
-  width: 100%;
-  max-width: 500px;
-  border-radius: 8px;
-  margin-top: 20px;
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #4CAF50;
+  color: white;
+  margin-top: 2rem;
 }
