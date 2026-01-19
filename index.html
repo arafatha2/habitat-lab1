@@ -2,75 +2,45 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Habitat for Humanity</title>
-
-  <!-- CSS -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Habitat Lab 1</title>
   <link rel="stylesheet" href="styles.css">
-
-  <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-  <!-- JS -->
-  <script src="script.js" defer></script>
 </head>
-
 <body>
-
-  <!-- Header / Navigation -->
   <header>
-    <img src="images/logo.png" alt="Habitat for Humanity Logo" id="logo">
-
-    <nav>
-      <img
-        src="images/menu_icon_default.jpg"
-        alt="Menu"
-        id="menuIcon"
-      >
-
-      <ul>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Build</a></li>
-        <li><a href="#">Advocacy</a></li>
-        <li><a href="#">Donate</a></li>
-      </ul>
-    </nav>
+    <h1>Habitat Lab 1</h1>
+    <p>Exploring habitats through images and audio</p>
   </header>
 
-  <!-- Main Content -->
   <main>
-    <article>
+    <!-- Section 1 -->
+    <section class="card">
       <h2>Advocacy in Action</h2>
+      <button class="toggle-btn">Show/Hide Image & Audio</button>
+      <img src="images/advocacy.jpg" alt="Advocacy Image">
+      <audio controls>
+        <source src="images/advocacy-audio.mp3" type="audio/mpeg">
+      </audio>
+      <p>This section describes advocacy in action.</p>
+    </section>
 
-      <p>
-        Habitat for Humanity works with communities around the world to build
-        strength, stability, and self-reliance through shelter.
-      </p>
-
-      <!-- Media Section -->
-      <div class="media">
-        <img
-          src="images/default-1_15.jpg"
-          alt="Habitat Home"
-          class="fadeImage"
-        >
-
-        <button id="playAudio">Play Audio</button>
-
-        <video controls>
-          <source
-            src="images/habitat_video_Web_720.mp4"
-            type="video/mp4"
-          >
-        </video>
-      </div>
-
-      <audio
-        id="habitatAudio"
-        src="images/habitat_audio.mp3"
-      ></audio>
-
-    </article>
+    <!-- Section 2 -->
+    <section class="card">
+      <h2>Habitat Example</h2>
+      <button class="toggle-btn">Show/Hide Image & Audio</button>
+      <img src="images/habitat.jpg" alt="Habitat Image">
+      <audio controls>
+        <source src="images/habitat-audio.mp3" type="audio/mpeg">
+      </audio>
+      <p>This section describes a specific habitat example.</p>
+    </section>
   </main>
 
+  <footer>
+    <p>Created by Ara Ahmed</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
