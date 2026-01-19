@@ -1,55 +1,105 @@
+/* ---------- Global ---------- */
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Segoe UI", Arial, sans-serif;
   margin: 0;
-  padding: 0;
+  background-color: #f4f6f8;
+  color: #333;
 }
 
+main {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* ---------- Header ---------- */
 header {
   background-color: #003a8f;
-  color: white;
-  padding: 20px;
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-nav h4 {
+#logo {
+  max-width: 140px;
+}
+
+/* ---------- Navigation ---------- */
+nav {
+  position: relative;
+}
+
+#menuIcon {
+  width: 35px;
   cursor: pointer;
 }
 
 nav ul {
   list-style: none;
-  padding: 0;
+  position: absolute;
+  right: 0;
+  top: 45px;
+  background: white;
+  padding: 15px;
+  margin: 0;
+  border-radius: 6px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
   display: none;
 }
 
-nav ul li {
-  margin: 5px 0;
+nav li {
+  margin: 10px 0;
 }
 
 nav a {
-  color: white;
   text-decoration: none;
+  color: #003a8f;
+  font-weight: 600;
 }
 
-main {
-  padding: 20px;
+/* ---------- Content ---------- */
+article {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
 
-img {
+article h2 {
+  margin-top: 0;
+  color: #003a8f;
+}
+
+.fadeImage {
   width: 100%;
-  max-width: 400px;
+  max-width: 500px;
+  border-radius: 8px;
+  margin: 20px 0;
   display: block;
-  margin-bottom: 15px;
-  cursor: pointer;
 }
 
+/* ---------- Buttons ---------- */
 button {
-  padding: 10px 15px;
   background-color: #f5a623;
+  color: #222;
   border: none;
+  padding: 12px 20px;
+  font-size: 15px;
+  border-radius: 6px;
   cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-footer {
-  background-color: #eee;
-  text-align: center;
-  padding: 10px;
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* ---------- Video ---------- */
+video {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 8px;
+  margin-top: 20px;
 }
