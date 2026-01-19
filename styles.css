@@ -1,4 +1,4 @@
-/* ============ BASE RESET ============ */
+/* RESET */
 * {
   margin: 0;
   padding: 0;
@@ -7,78 +7,75 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #f5f7fa;
-  color: #2a2a2a;
+  background-color: #f0f4f8;
+  color: #333;
   line-height: 1.6;
   padding: 2rem;
 }
 
-/* ============ HEADER ============ */
+/* HEADER */
 header {
   text-align: center;
-  padding: 1.5rem 0;
   background: linear-gradient(135deg, #4a90e2, #50c9c3);
   color: white;
+  padding: 2rem 1rem;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   margin-bottom: 2rem;
 }
 
 header h1 {
   font-size: 2.8rem;
-  font-weight: 700;
-  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
 }
 
 header p {
   font-size: 1.1rem;
-  margin-top: 0.5rem;
 }
 
-/* ============ MAIN SECTION ============ */
+/* MAIN CARDS */
 main {
   max-width: 900px;
   margin: 0 auto;
 }
 
-/* Card look */
 .content-card {
-  background: #fff;
-  padding: 1.8rem;
+  background: white;
+  padding: 2rem;
+  margin-bottom: 2rem;
   border-radius: 12px;
   box-shadow: 0 6px 12px rgba(0,0,0,0.08);
-  margin-bottom: 2rem;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .content-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 16px rgba(0,0,0,0.12);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.12);
 }
 
-/* Images */
+/* IMAGES */
 .content-card img {
   width: 100%;
   border-radius: 8px;
   margin-top: 1rem;
-  display: block; /* visible by default */
+  display: block;
 }
 
-/* Paragraphs */
+/* PARAGRAPHS */
 .content-card p {
   margin-top: 1rem;
   font-size: 1.05rem;
-  display: block; /* visible by default */
+  display: block;
 }
 
-/* Audio */
+/* AUDIO */
 .content-card audio {
   width: 100%;
   margin-top: 1rem;
-  display: block; /* visible by default */
+  display: block;
 }
 
-/* Show/Hide Button */
+/* BUTTON */
 .toggle-btn {
   background: #50c9c3;
   color: white;
@@ -87,19 +84,18 @@ main {
   padding: 0.6rem 1rem;
   border-radius: 8px;
   cursor: pointer;
-  margin-top: 0.8rem;
-  transition: background 0.3s ease;
+  margin-top: 0.5rem;
+  transition: background 0.3s;
 }
 
 .toggle-btn:hover {
   background: #48b8ad;
 }
 
-/* ============ FOOTER ============ */
+/* FOOTER */
 footer {
   text-align: center;
   padding: 1rem;
-  margin-top: 2rem;
-  font-size: 0.9rem;
   color: #6a6a6a;
+  margin-top: 2rem;
 }
