@@ -61,21 +61,21 @@ main {
   width: 100%;
   border-radius: 8px;
   margin-top: 1rem;
-  display: none; /* hidden initially */
+  display: block; /* visible by default */
 }
 
 /* Paragraphs */
 .content-card p {
   margin-top: 1rem;
   font-size: 1.05rem;
-  display: none; /* hidden initially */
+  display: block; /* visible by default */
 }
 
 /* Audio */
 .content-card audio {
   width: 100%;
   margin-top: 1rem;
-  display: none; /* hidden initially */
+  display: block; /* visible by default */
 }
 
 /* Show/Hide Button */
