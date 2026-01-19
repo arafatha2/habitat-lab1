@@ -65,6 +65,13 @@ main {
   display: block;
 }
 
+/* VIDEO */
+.media-container video {
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  display: block;
+}
+
 /* PARAGRAPHS */
 .media-container p {
   margin-bottom: 1rem;
@@ -76,6 +83,7 @@ main {
 .media-container audio {
   width: 100%;
   display: block;
+  margin-bottom: 1rem;
 }
 
 /* BUTTON */
