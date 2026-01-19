@@ -1,4 +1,4 @@
-/* Basic Reset */
+/* ============ BASE RESET ============ */
 * {
   margin: 0;
   padding: 0;
@@ -6,22 +6,28 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
-  background: #f7f7f7;
-  color: #333;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f5f7fa;
+  color: #2a2a2a;
   line-height: 1.6;
+  padding: 2rem;
 }
 
-/* Header */
+/* ============ HEADER ============ */
 header {
   text-align: center;
-  background: #4CAF50;
-  color: white;
   padding: 1.5rem 0;
+  background: linear-gradient(135deg, #4a90e2, #50c9c3);
+  color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
 }
 
 header h1 {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 
 header p {
@@ -29,55 +35,71 @@ header p {
   margin-top: 0.5rem;
 }
 
-/* Main content */
+/* ============ MAIN SECTION ============ */
 main {
   max-width: 900px;
-  margin: 2rem auto;
-  padding: 0 1rem;
+  margin: 0 auto;
 }
 
-.card {
-  background: white;
+/* Card look */
+.content-card {
+  background: #fff;
+  padding: 1.8rem;
   border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  padding: 1.5rem;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.08);
   margin-bottom: 2rem;
-  text-align: center;
-  transition: transform 0.2s;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.card:hover {
-  transform: translateY(-5px);
+.content-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.12);
 }
 
-.card img, .card audio {
+/* Images */
+.content-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 1rem;
+  display: none; /* hidden initially */
+}
+
+/* Paragraphs */
+.content-card p {
+  margin-top: 1rem;
+  font-size: 1.05rem;
+  display: none; /* hidden initially */
+}
+
+/* Audio */
+.content-card audio {
   width: 100%;
   margin-top: 1rem;
-  border-radius: 8px;
-  display: none; /* initially hidden */
+  display: none; /* hidden initially */
 }
 
-/* Buttons */
+/* Show/Hide Button */
 .toggle-btn {
-  background: #4CAF50;
+  background: #50c9c3;
   color: white;
   border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 6px;
+  font-weight: 600;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
   cursor: pointer;
-  margin-top: 0.5rem;
-  transition: background 0.3s;
+  margin-top: 0.8rem;
+  transition: background 0.3s ease;
 }
 
 .toggle-btn:hover {
-  background: #45a049;
+  background: #48b8ad;
 }
 
-/* Footer */
+/* ============ FOOTER ============ */
 footer {
   text-align: center;
   padding: 1rem;
-  background: #4CAF50;
-  color: white;
   margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #6a6a6a;
 }
