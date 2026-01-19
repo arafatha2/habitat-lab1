@@ -4,23 +4,20 @@
   <meta charset="UTF-8">
   <title>Habitat for Humanity</title>
 
-  <!-- CSS -->
   <link rel="stylesheet" href="styles.css">
 
-  <!-- jQuery CDN -->
+  <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-  <!-- JS -->
   <script src="script.js" defer></script>
 </head>
 
 <body>
 
   <header>
-    <h1>Habitat for Humanity</h1>
+    <img src="media/logo.png" alt="Habitat Logo" id="logo">
 
     <nav>
-      <h4 id="menuToggle">Simple, decent, affordable housing</h4>
+      <img src="media/menu_icon_default.jpg" id="menuIcon" alt="Menu Icon">
       <ul>
         <li><a href="#">About</a></li>
         <li><a href="#">Build</a></li>
@@ -34,22 +31,22 @@
     <article>
       <h2>Advocacy in Action</h2>
 
-      <img src="images/habitat.jpg" alt="Habitat Home">
+      <img src="media/default-1_15.jpg" alt="Habitat Home" class="fadeImage">
 
       <p>
-        Habitat for Humanity helps families build strength, stability,
-        and self-reliance through shelter.
+        Habitat for Humanity partners with families to build affordable housing.
       </p>
 
-      <button id="playAudio">Play Audio Story</button>
+      <button id="playAudio">Play Audio</button>
 
       <audio id="habitatAudio" src="media/habitat_audio.mp3"></audio>
+
+      <h3>Watch Our Work</h3>
+      <video controls width="400">
+        <source src="media/habitat_video_Web_720.mp4" type="video/mp4">
+      </video>
     </article>
   </main>
-
-  <footer>
-    <p>&copy; Habitat for Humanity</p>
-  </footer>
 
 </body>
 </html>
