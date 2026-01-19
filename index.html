@@ -4,20 +4,29 @@
   <meta charset="UTF-8">
   <title>Habitat for Humanity</title>
 
+  <!-- CSS -->
   <link rel="stylesheet" href="styles.css">
 
   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- JS -->
   <script src="script.js" defer></script>
 </head>
 
 <body>
 
+  <!-- Header / Navigation -->
   <header>
-    <img src="images/logo.png" alt="Habitat Logo" id="logo">
+    <img src="images/logo.png" alt="Habitat for Humanity Logo" id="logo">
 
     <nav>
-      <img src="images/menu_icon_default.jpg" id="menuIcon" alt="Menu Icon">
+      <img
+        src="images/menu_icon_default.jpg"
+        alt="Menu"
+        id="menuIcon"
+      >
+
       <ul>
         <li><a href="#">About</a></li>
         <li><a href="#">Build</a></li>
@@ -27,19 +36,41 @@
     </nav>
   </header>
 
+  <!-- Main Content -->
   <main>
     <article>
       <h2>Advocacy in Action</h2>
 
-      <img src="images/default-1_15.jpg" alt="Habitat Home" class="fadeImage">
-
       <p>
-        Habitat for Humanity partners with families to build affordable housing.
+        Habitat for Humanity works with communities around the world to build
+        strength, stability, and self-reliance through shelter.
       </p>
 
-      <button id="playAudio">Play Audio</button>
+      <!-- Media Section -->
+      <div class="media">
+        <img
+          src="images/default-1_15.jpg"
+          alt="Habitat Home"
+          class="fadeImage"
+        >
 
-      <audio id="habitatAudio" src="images/habitat_audio.mp3"></audio>
+        <button id="playAudio">Play Audio</button>
 
-      <h3>Watch Our Work</h3>
-      <video controls width
+        <video controls>
+          <source
+            src="images/habitat_video_Web_720.mp4"
+            type="video/mp4"
+          >
+        </video>
+      </div>
+
+      <audio
+        id="habitatAudio"
+        src="images/habitat_audio.mp3"
+      ></audio>
+
+    </article>
+  </main>
+
+</body>
+</html>
