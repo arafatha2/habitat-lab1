@@ -1,23 +1,12 @@
-$(document).ready(function () {
-
-  // Toggle navigation menu
-  $("#menuToggle").click(function () {
-    $("nav ul").slideToggle();
+$(document).ready(function(){
+  // Toggle image and audio on button click
+  $(".toggle-btn").click(function(){
+    $(this).siblings("img, audio").fadeToggle(500);
   });
 
-  // Image hover effect
-  $("img").hover(
-    function () {
-      $(this).fadeTo("fast", 0.5);
-    },
-    function () {
-      $(this).fadeTo("fast", 1);
-    }
+  // Optional: subtle hover effect
+  $(".card").hover(
+    function(){ $(this).css("transform", "scale(1.02)"); },
+    function(){ $(this).css("transform", "scale(1)"); }
   );
-
-  // Play audio on button click
-  $("#playAudio").click(function () {
-    $("#habitatAudio")[0].play();
-  });
-
 });
